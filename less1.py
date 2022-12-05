@@ -31,7 +31,7 @@ for j in range(3, 10050):
     sheet["K2"].value = 0 - sheet["H2"].value
     z = sheet["K" + str(j - 1)].value - sheet["H" + str(j)].value
     sheet["K" + str(j)].value = z
-# Добавляю графики
+# Построение графиков
 chart = ScatterChart()
 xvalues = Reference(sheet, min_col=9, min_row=2, max_row=10050)
 yvalues = Reference(sheet, min_col=10, min_row=2, max_row=10050)
